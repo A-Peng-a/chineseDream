@@ -1,0 +1,867 @@
+@font-face {
+    font-family: myFont;
+    src: url('../fonts/造字工坊版黑.ttf')
+}
+
+html{
+    min-width: 320px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 2.1rem;
+    line-height: 2;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+
+.navigation ul li {
+    margin: 0 40px 0 0;
+    opacity: 0.4;
+    transition: all 0.4s ease;
+}
+
+.navigation ul li.active {
+    opacity: 1;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: 1.4rem;
+}
+
+.navigation ul li a:focus,
+.navigation ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation .line {
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    background: #fff;
+}
+
+#fp-nav ul li a span {
+    background-color: #fff;
+}
+
+.CN p,
+.CN h2 {
+    color: #fff;
+}
+
+.CN .section .content {
+    max-width: 60vw;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+.CN .index {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+.CN .mouse {
+    width: 21px;
+    height: 34px;
+    border: 1px solid #fff;
+    border-radius: 10.5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.CN .mouse .gunlun {
+    width: 2px;
+    height: 8px;
+    background-color: #fff;
+    animation: gunlun .8s infinite;
+    border-radius: 1px;
+}
+
+.CN .start {
+    font-size: 1.8rem;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #2878ff), color-stop(0.3, #2878ff), color-stop(0.5, white), color-stop(0.7, #2878ff), color-stop(1, #2878ff));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slidetounlock 4s linear infinite;
+    display: inline-block;
+}
+
+.big-content {
+    padding: 20px 50px;
+    color: #fff;
+}
+
+.CN .section1 img {
+    width: 100%;
+}
+
+.CN .section3 ul,
+.CN .section4 ul {
+    font-size: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.CN .section3 ul li,
+.CN .section4 ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 25%;
+    text-align: center;
+    /* height: 100%; */
+}
+
+.CN .section2 .car {
+    overflow: hidden;
+    position: relative;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.progress {
+    overflow: visible;
+}
+
+.progress .title {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    font-size: 1.8rem;
+}
+
+.CN .section2 .car video {
+    height: 100%;
+
+}
+
+.CN .section3 ul .gza {
+    background-image: url(../img/Hong\ Kong-Zhuhai-Macao\ Bridge.jpg);
+    background-position: center center;
+}
+
+.CN .section5 {
+    background-image: url(../img/zhongguogang.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.CN .section2 .car .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row
+}
+
+.CN .section2 .car .content p {
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.CN .section2 .car .content .small {
+    font-size: 1.6rem;
+}
+
+.text {
+    padding-left: 3.2rem
+}
+
+.section1.section {
+    background-image: url(../img/Zhenhua\ 30.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section2.section{
+    background-image: url(../img/qiaolu.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section3.section {
+    background-image: url(../img/Hong\ Kong-Zhuhai-Macao\ Bridge.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: scaleImg 3s linear;
+    -webkit-animation: scaleImg 6s linear;
+}
+.section4.section {
+    background-image: url(../img/gaotie.jpeg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .section3:hover .gzabgimg{
+    -webkit-animation: scaleImg 3s linear;
+} */
+.section3 .header-title {
+    position: relative;
+    margin-top: 100px;
+}
+
+.section3 .gzabgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section3 .yuan {
+    animation: rotate 3s linear infinite;
+    width: 240px;
+}
+
+.section .more {
+    margin-top: 30px;
+    z-index: 3;
+    position: relative;
+    font-size: 2.1rem;
+    text-decoration: none;
+    padding: 4px 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.section .more:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+}
+
+.section3 .content-box {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 56px;
+}
+
+.section3 .title {
+    font-family: myFont;
+    font-size: 6rem;
+    color: #067194;
+}
+
+.section3 .content {
+    color: #067194;
+    font-size: 2.1rem;
+}
+
+.section3 .body-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 11;
+}
+
+.section3 .body-content ul li {
+    width: 33.3%;
+    position: relative;
+    padding: 60px 0px;
+}
+
+.section3 .body-content ul li+li::before {
+    content: "";
+    background-image: url(../img/Partition\ line.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.section3 .body-content .data-long {
+    font-family: myFont;
+    font-size: 6.4rem;
+    color: #fff;
+}
+
+.section3 .body-content .km {
+    color: #fff;
+    font-size: 2.1rem;
+}
+
+.body-content ul li {
+    position: relative;
+    height: 265px;
+    color: #fff;
+}
+
+.body-content ul li .zheng {
+    padding: 20px;
+}
+
+.body-content ul li .zheng,
+.body-content ul li .fan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    transition: all 0.5s;
+    padding: 20px;
+}
+
+.body-content ul li .zheng {
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.body-content ul li .fan {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    opacity: 0;
+    line-height: 30px;
+    transform: rotateY(180deg);
+    padding: 0px 80px;
+    text-align: left;
+    text-indent: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    transition: all 0.5s;
+    padding: 20px;
+    
+}
+
+.body-content ul li:hover .zheng {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.body-content ul li:hover .fan {
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.fubiaoti {
+    color: #fff;
+    font-size: 2.8rem;
+}
+
+.section5 .content {
+    position: relative;
+    z-index: 1;
+}
+
+.section5 .content .myText {
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.glyphicon-menu-right {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.glyphicon-menu-right {
+    animation: move 2.5s cubic-bezier(0.1, 0.5, 0.5, -0.1) infinite;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-top: 1px solid rgb(255, 255, 255, 0.1);
+    line-height: 39px;
+    color: rgba(255, 255, 255, .5);
+    padding: 0;
+    background-color: transparent;
+}
+
+
+.sidebar-nav li:nth-child(3):before {
+    width: 100%;
+}
+
+.sidebar-nav li:nth-child(3) a {
+    color: #fff;
+}
+
+.credit {
+    text-align: center;
+    color: rgba(255, 255, 255, .4)
+}
+
+.button_container {
+    width: 176px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 40px
+}
+
+.button_su {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 50px
+}
+
+.su_button_circle {
+    background-color: red;
+    border-radius: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    margin-top: 0;
+    pointer-events: none
+}
+
+.button_su_inner {
+	display: inline-block;
+	border: 1px solid white;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	border-radius: 5px;
+	-webkit-transition: 400ms;
+	-o-transition: 400ms;
+	transition: 400ms;
+	text-decoration: none;
+	padding: 6px 18px;
+	z-index: 100000
+}
+
+.button_text_container {
+    position: relative;
+    z-index: 10000
+}
+
+.explode-circle {
+    animation: explode .5s forwards
+}
+
+.desplode-circle {
+    animation: desplode .5s forwards
+}
+
+.button_su_inner:focus,
+.button_su_inner:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.section3 .fp-tableCell {
+    vertical-align: unset;
+}
+
+.section4 .row,.section5 .row{
+    margin-top: 60px;
+}
+
+.CN .section{
+    background-size: cover;
+}
+
+nav {
+    background: none;
+    padding: 0px;
+    padding-bottom: 12px;
+}
+
+.navigation:hover{
+    transform: none!important;
+    background-color:unset!important;
+    box-shadow: none!important;
+}
+.fp-responsive{
+    height: 100vh;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100px);
+        opacity: 0.1;
+    }
+}
+
+@keyframes move_phone{
+    0% {
+        transform: translateX(-40px);
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(30px);
+        opacity: 0.1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes scaleImg {
+
+    /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%,
+    50%,
+    100% {
+        background-size: 100%;
+        /*开始为原始大小*/
+    }
+
+    25%,
+    75% {
+        background-size: 120%;
+    }
+}
+
+@keyframes scaleImg_phone {
+
+    /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%,
+    50%,
+    100% {
+        background-size: auto 100%;
+        /*开始为原始大小*/
+    }
+
+    25%,
+    75% {
+        background-size: auto 120%;
+    }
+}
+
+@keyframes gunlun {
+    from {
+        transform: translateY(4px);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(8px);
+        opacity: 0;
+    }
+}
+
+@keyframes slidetounlock {
+    0% {
+        background-position: -150px 0
+    }
+
+    80% {
+        background-position: 100px 0
+    }
+
+    100% {
+        background-position: 150px 0
+    }
+}
+
+@keyframes explode {
+    0% {
+        width: 0;
+        height: 0;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: rgba(51, 51, 51, 0);
+        color: #fff;
+    }
+
+    100% {
+        width: 400px;
+        height: 400px;
+        margin-left: -200px;
+        margin-top: -200px;
+        background-color: rgba(255, 255, 255, 1);
+        color: #333;
+    }
+}
+
+@keyframes desplode {
+    0% {
+        width: 400px;
+        height: 400px;
+        margin-left: -200px;
+        margin-top: -200px;
+        background-color: rgba(255, 255, 255, 1);
+
+    }
+
+    100% {
+        width: 0;
+        height: 0;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: rgba(51, 51, 51, 0);
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 2300px){
+
+}
+
+@media only screen and (max-width: 1200px){
+    h2 {
+        font-size: 40px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .fubiaoti {
+        font-size: 24px;
+    }
+
+    .CN .section .content {
+        max-width: 100vw;
+        padding: 0 10px;
+        /* margin-bottom: 60px; */
+    }
+
+    .CN .more {
+        margin-top: 50px;
+    }
+
+    .CN .index {
+        margin-top: 26px;
+    }
+
+    .section3 .header-title {
+        margin-top: 70px;
+    }
+
+    .button_su {
+        margin-top: 15px;
+    }
+
+    .section3 .body-content .data-long {
+        font-size: 2.1rem;
+    }
+
+    .body-content ul li .fan {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .section3 .body-content .km{
+        font-size: 1.7rem
+    }
+
+    .body-content ul li {
+        height: 150px;
+    }
+    
+    .section4 .row,.section5 .row{
+        margin-top: 80px;
+    }
+    .glyphicon-menu-right{
+        font-size: 21px;
+        margin-top: 24px;
+        animation: move_phone 2.5s cubic-bezier(0.1, 0.5, 0.5, -0.1) infinite;
+    }
+
+    .progress .title{
+        bottom: -40px;
+    }
+    .section3 .body-content ul li+li::before{
+        top: 16px;
+        height: 60%;
+    }
+
+
+}
+
+@media only screen and (max-width:992px){
+    .body-content ul li .fan{
+        margin-top: 15px;
+    }
+    .section4 .row, .section5 .row{
+        margin-top: 30px;
+    }
+    .CN .section1 .content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .section3.section {
+        background-size: cover;
+        animation: scaleImg_phone 6s linear;
+        -webkit-animation: scaleImg_phone 6s linear;
+    }
+
+    .progress{
+        width: 70px;
+        height: 70px;
+    }
+    .progress .progress-value{
+        font-size: 16px;
+        line-height: 60px;
+    }
+    .progress .title{
+        font-size: 17px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .fubiaoti{
+        font-size: 24px;
+    }
+    p{
+        font-size: 21px;
+    }
+    .body-content ul li:hover .zheng {
+        transform: unset;
+        opacity: unset;
+    }
+    
+    .body-content ul li:hover .fan {
+        transform: unset;
+        opacity: unset;
+    }
+}
+@media only screen and (max-width:450px){
+    .CN .index{
+        margin-top: 20px;
+    }
+    .CN .section1 .content{
+        margin-top: 20px;
+    }
+    .CN .section1 .content p{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 12;
+        overflow: hidden;
+    }
+    .section3 .title{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .section3 .body-content .km{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .CN h2{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    p{
+        font-size: 18px;
+    }
+    .section4 .row, .section5 .row{
+        margin-top: 30px;
+    }
+    .CN .section5 .content{
+        margin-top: 40px;
+    }
+    .glyphicon-menu-right{
+        font-size: 1.8rem;
+        margin-top: 25px;
+        animation: move_phone 2.5s cubic-bezier(0.1, 0.5, 0.5, -0.1) infinite;
+        -webkit-animation: move_phone 2.5s cubic-bezier(0.1, 0.5, 0.5, -0.1) infinite;
+    }
+    .button_su_inner{
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width:320px) {
+    .section1{
+        font-size: 0px;
+    }
+    h2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}

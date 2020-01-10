@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中国梦，复兴梦_首页</title>
+    <link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" href="globalframe/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="globalframe/fullPage.js-master/dist/fullpage.min.css">
+    <link rel='stylesheet' href='globalcss/style.css'>
+    <link rel="stylesheet" href="./page/index/css/index.css">
+    <script src="globalframe/jquery-3.4.1.js"></script>
+    <script src="globalframe/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="globalframe/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+    <script src="globalframe/fullPage.js-master/dist/fullpage.min.js"></script>
+    <script src="globalframe/fullPage.js-master/dist/fullpage.extensions.min.js"></script>
+    <script src="globaljs/trigger.js"></script>
+    <script src="globaljs/sketch.min.js"></script>
+    <script src="globaljs/buttonsu.js"></script>
+    <script src="./page/index/js/fullpage.js"></script>
+    <style>
+        .shengyin {
+            position: fixed;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, 50%);
+            width: 20vh;
+            height: 20vh;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 99999;
+            border-radius: 10px;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* animation: shengyin .5s 3s; */
+            transition: all .5s;
+        }
+
+        .shengyin p,
+        .shengyin span {
+            transition: all .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        中国梦，复兴梦
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html"><img src="globalimg/index.png" alt=""> 首页</a>
+                </li>
+                <li>
+                    <a href="./page/superengineering/superengineering.html"><img src="globalimg/superengineering.png"
+                            alt=""> 超级工程</a>
+                </li>
+                <li>
+                    <a href="./page/technologicalinnovation/technologicalinnovation.html"><img
+                            src="globalimg/technological innovation.png" alt=""> 科技发展</a>
+                </li>
+                <li>
+                    <a href="./page/thebeltandroad/thebeltandroad.html"><img src="globalimg/beltandroadinitiative.png"
+                            alt="">
+                        一带一路</a>
+                </li>
+                <li>
+                    <a href="./page/greendevelopment/greendevelopment.html"><img
+                            src="globalimg/sustainabledevelopment.png" alt=""> 可持续发展</a>
+                </li>
+                <li>
+                    <a href="./page/chinesedream/chinesedream.html"><img src="globalimg/chinesedream.png" alt="">
+                        中国梦</a>
+                </li>
+                <li>
+                    <a href="./page/quintessence/quintessence.html"><img src="globalimg/quintessence.png" alt="">
+                        国魂</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="shengyin">
+                <span class="glyphicon glyphicon-volume-up" style="font-size: 70px;"></span>
+                <p style="font-size: 18px;line-height: 1.5;">温馨提示<br><span style="font-size: 12px;">点击任意地方播放音乐</span></p>
+            </div>
+            <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <h4
+                style="position: fixed;top:17px;margin-left: 60px;color: rgba(255, 255, 255, 0.7);z-index: 99999;font-weight: bold">
+                MENU</h4>
+            <div class="fp-responsive">
+                <audio id="a1" autoplay="false" loop="-1">
+                    <source src="./bgmusic.mp3">
+                </audio>
+                <nav class="navigation visible-md-block visible-lg-block">
+                    <ul id="menu" style="padding: 0;margin: 0;list-style: none;display: flex;">
+                        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">中国梦，复兴梦</a></li>
+                        <li data-menuanchor="secondPage"><a href="#secondPage">超级工程</a></li>
+                        <li data-menuanchor="thirdPage"><a href="#thirdPage">科技发展</a></li>
+                        <li data-menuanchor="fourthPage"><a href="#fourthPage">一带一路</a></li>
+                        <li data-menuanchor="fivePage"><a href="#fivePage">可持续发展</a></li>
+                        <li data-menuanchor="sixPage"><a href="#sixPage">中国梦</a></li>
+                        <li data-menuanchor="seventPage"><a href="#seventPage">国魂</a></li>
+                    </ul>
+                </nav>
+                <div class="language">
+                    <a href="index.html" class="language_cn active">中文 </a>/<a href="./page/index/index_en.html"
+                        class="language_en"> English</a>
+                </div>
+                <div id="fullpage" class="CN">
+                    <div class="section section1">
+                        <video src="./page/index/video/zgmfxm.mp4" data-autoplay loop="false" muted
+                            ></video>
+                        <!-- <div class="fangzi">
+                            <img src="./page/index/img/fang.png" alt="">
+                            <div class="yanwu">
+                                <img src="./page/index/img/yan.png" alt="">
+                            </div>
+                        </div>
+                        <div class="Title_one">
+                            <img src="./page/index/img/zgm.png" alt="">
+                        </div>
+                        <div class="Title_two">
+                            <img src="./page/index/img/fxm.png" alt="">
+                        </div> -->
+                    </div>
+                    <div class="section section6">
+
+                        <div class="mask"></div>
+
+                        <div class="content">
+                            <span class="fubiaoti">China's Mega Projects</span>
+                            <h2>超级工程</h2>
+                            <p>工业革命后的历史表明，一个国家如果拥有了一张由钢轨连接而成的经济网络它所蕴涵的能量能够为经济腾飞源源不竭地注入动力。铁路至今仍被视作现代化地重要标志。</p>
+                        </div>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="./page/superengineering/superengineering.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    了解更多
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section section2">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">Scientific Developm</span>
+                            <h2>科技发展</h2>
+                            <p>纵观科技发展的轨迹，他的每一次重大突破都会引起经济的深刻变革和社会的巨大进步。</p>
+                            <p>科学技术日益渗透到经济建设社会进步和人类进步的各个领域，成为生产力中最活跃的因素，科学技术是第一生产力。</p>
+                            </p>
+                        </div>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="./page/technologicalinnovation/technologicalinnovation.html"
+                                class="button_su_inner">
+                                <span class="button_text_container">
+                                    了解更多
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section section4">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">The Belt and Road</span>
+                            <h2>一带一路</h2>
+                            <p>中国与有关国家既有的双多边机制，借助既有的、行之有效的区域合作平台，一带一路旨在借用古代丝绸之路的历史符号，高举和平发展的旗帜，积极发展与沿线国家的经济合作伙伴关系，共同打造政治互信、经济融合、文化包容的利益共同体、命运共同体和责任共同体。
+                            </p>
+                        </div>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="./page/thebeltandroad/thebeltandroad.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    了解更多
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section section5">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">Sustainable Development</span>
+
+                            <h2>可持续发展</h2>
+                            <p>追求人与自然的和谐。可持续性可以通过适当的经济手段、技术措施和政府干预得以实现，目的是减少自然资源的消耗速度，使之低予再生速度。如形成有效的利益驱动机制，引导企业采用清洁工艺和生产非污染物品，引导消费者采用可持续消费方式，并推动生产方式的改革。
+                            </p>
+                        </div>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="./page/greendevelopment/greendevelopment.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    了解更多
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section section7">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">The Chinese Dream</span>
+
+                            <h2>中国梦</h2>
+                            <p>国家富强、民族振兴、人民幸福，实现途径是走中国特色的社会主义道路、坚持中国特色社会主义理论体系、弘扬民族精神、凝聚中国力量，全力追求政治、经济、文化、社会、生态文明五位一体建设。
+                            </p>
+                        </div>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="./page/chinesedream/chinesedream.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    了解更多
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section section3">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">Chinese Traditional Culture</span>
+
+                            <h2>国粹</h2>
+                            <p>中华民族的传统文化中最具有代表性，最富有独特内涵而深受许多时代的人们欢迎的文化遗产。
+                                <br>
+                                中国的国粹有很多，其中誉满中外的中国京剧、中国武术、中国书法、中国医学，被世人称为“中国的四大国粹”。
+                            </p>
+                        </div>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="./page/quintessence/quintessence.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    了解更多
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <footer class="copyright hidden-xs">
+                    Copyright &copy; 2019.Company 王者之师 All rights
+                    reserved. 网站制作：王者之师
+                </footer>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <script>
+        let oA = document.querySelector("#a1");
+        let timer = null;
+
+        function autoPlay() {
+            if (oA.paused) { //如果暂停
+                $(".shengyin").css("dispaly", "block");
+                oA.paused = false; //设为不暂停
+                oA.play(); //调用play（）方法播放
+            } else { //如果未暂停
+                $(".shengyin").css("display", "none");
+                clearInterval(timer); //清掉定时器
+            }
+
+        }
+        timer = setInterval(autoPlay, 1); //用定时器触发autoplay自动播放
+    </script>
+</body>
+
+</html>

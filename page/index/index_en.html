@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>China dream, Renaissance dream _ home page</title>
+    <link rel="shortcut icon" href="../../logo.ico">
+    <link rel="stylesheet" href="../../globalframe/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../globalframe/fullPage.js-master/dist/fullpage.min.css">
+    <link rel='stylesheet' href='../../globalcss/style.css'>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="../../globalframe/jquery-3.4.1.js"></script>
+    <script src="../../globalframe/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../../globalframe/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+    <script src="../../globalframe/fullPage.js-master/dist/fullpage.min.js"></script>
+    <script src="../../globalframe/fullPage.js-master/dist/fullpage.extensions.min.js"></script>
+    <script src="../../globaljs/trigger.js"></script>
+    <script src="../../globaljs/sketch.min.js"></script>
+    <script src="../../globaljs/mousemove.js"></script>
+    <script src="../../globaljs/buttonsu.js"></script>
+    <script src="js/fullpage.js"></script>
+    <style>
+        .shengyin {
+            position: fixed;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, 50%);
+            width: 20vh;
+            height: 20vh;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 99999;
+            border-radius: 10px;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* animation: shengyin .5s 3s; */
+            transition: all .5s;
+        }
+
+        .shengyin p,
+        .shengyin span {
+            transition: all .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="./index_en.html">
+                        Chinese dream<br>Renaissance dream
+                    </a>
+                </li>
+                <li>
+                    <a href="../index/index_en.html"><img src="../../globalimg/index.png" alt=""> Home</a>
+                </li>
+                <li>
+                    <a href="../superengineering/superengineering_en.html"><img
+                            src="../../globalimg/superengineering.png" alt=""> Super engineering</a>
+                </li>
+                <li>
+                    <a href="../technologicalinnovation/technologicalinnovation_en.html"><img
+                            src="../../globalimg/technological innovation.png" alt=""> Science</a>
+                </li>
+                <li>
+                    <a href="../thebeltandroad/thebeltandroad_en.html"><img
+                            src="../../globalimg/beltandroadinitiative.png" alt="">Belt and Road</a>
+                </li>
+                <li>
+                    <a href="../greendevelopment/greendevelopment_en.html"><img
+                            src="../../globalimg/sustainabledevelopment.png" alt=""> Sustainable</a>
+                </li>
+                <li>
+                    <a href="../chinesedream/chinesedream_en.html"><img src="../../globalimg/chinesedream.png" alt="">Chinese dream</a>
+                </li>
+                <li>
+                    <a href="../quintessence/quintessence_en.html"><img src="../../globalimg/quintessence.png" alt="">National spirit</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="shengyin">
+                <span class="glyphicon glyphicon-volume-up" style="font-size: 70px;"></span>
+                <p style="font-size: 18px;line-height: 1;">Reminder<br><span style="font-size: 12px;">Click anywhere to play music</span></p>
+            </div>
+            <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <h4
+                style="position: fixed;top:17px;margin-left: 60px;color: rgba(255, 255, 255, 0.7);z-index: 99999;font-weight: bold">
+                MENU</h4>
+            <div class="fp-responsive">
+                <audio id="a1" autoplay="false" loop="-1">
+                    <source src="../../bgmusic.mp3">
+                </audio>
+                <nav class="navigation visible-md-block visible-lg-block">
+                    <ul id="menu" style="padding: 0;margin: 0;list-style: none;display: flex;">
+                        <li data-menuanchor="firstPage" class="active"><a href="#firstPage"
+                                style="font-size:12px;">Chinese dream<br> Renaissance dream</a></li>
+                        <li data-menuanchor="secondPage" style="margin:0 5px;"><a href="#secondPage"
+                                style="font-size:12px;">Super <br> engineering</a></li>
+                        <li data-menuanchor="thirdPage" style="margin:0 5px;"><a href="#thirdPage"
+                                style="font-size:12px;">development<br> of science</a></li>
+                        <li data-menuanchor="fourthPage" style="margin:0 5px;"><a href="#fourthPage"
+                                style="font-size:12px;">the Belt <br> and Road</a></li>
+                        <li data-menuanchor="fivePage" style="margin:0 5px;"><a href="#fivePage"
+                                style="font-size:12px;">Sustainable <br> development</a></li>
+                        <li data-menuanchor="sixPage" style="margin:0 5px;"><a href="#sixPage"
+                                style="font-size:12px;">The Chinese<br> dream</a></li>
+                        <li data-menuanchor="seventPage" style="margin:0 5px;"><a href="#seventPage"
+                                style="font-size:12px;">National<br> spirit</a></li>
+                    </ul>
+                </nav>
+                <div class="language">
+                    <a href="../../index.html" class="language_cn">中文 </a>/<a href="index_en.html"
+                        class="language_en active"> English</a>
+                </div>
+                <div id="fullpage" class="CN">
+                    <div class="section section1">
+                        <video src="./video/zgmfxm.mp4" data-autoplay loop="false" muted
+                            ></video>
+                        <!-- <div id="test" class="visible-md-block visible-lg-block"
+                            style="position: absolute;top:0;left:0;z-index:10;"></div>
+                        <div class="fangzi">
+                            <img src="img/fang.png" alt="">
+                            <div class="yanwu">
+                                <img src="img/yan.png" alt="">
+                            </div>
+                        </div>
+                        <div class="Title_one">
+                            <img src="img/zgm.png" alt="">
+                        </div>
+                        <div class="Title_two">
+                            <img src="img/fxm.png" alt="">
+                        </div> -->
+                    </div>
+                    <div class="section section6">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">China's Mega Projects</span>
+                            <h2>Super engineering</h2>
+                            <p>After the industrial revolution in the history shows that if a country has a rail link to
+                                the energy contained in the economic network it can for the economic take-off to give
+                                impetus to continuing without end, the railway is still seen as modernization important
+                                symbol, the last five years, involved more than 7400, one hundred million yuan per year
+                                on average, this is China's railway history and put into operation, the period of the
+                                new line up on lanzhou-chongqing railway construction idea appears in the one hundred
+                                years ago
+                            </p>
+                        </div>
+                        <br>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="../superengineering/superengineering_en.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    To learn more
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section section2">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">Technological innovation for the future</span>
+
+                            <h2>The development of science and technology</h2>
+                            <p>Chinese science and technology led the world in ancient times, reaching its peak around
+                                the song dynasty. However, since the beginning of the 14th century, there have been few
+                                major scientific discoveries, inventions and creations that have influenced the world.
+                                China's scientific and technological undertakings gradually became institutionalized
+                                after the early exploration from western learning to limited industrialization, and then
+                                to system reform and construction of new culture. However, affected by the overall
+                                situation, until the founding of the People's Republic of China in 1949, fang gradually
+                                constructed China's modern science and technology system and system on the basis of
+                                reorganization, planning and adjustment, and continued to accelerate the development
+                                after the reform and opening up.
+                            </p>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="../technologicalinnovation/technologicalinnovation_en.html"
+                                class="button_su_inner">
+                                <span class="button_text_container">
+                                    To learn more
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section section4">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">The Belt and Road</span>
+
+                            <h2>the Belt and Road</h2>
+                            <p>China and relevant countries existing multilateral mechanisms, with the help of the
+                                existing and effective regional cooperation platform, One Belt And One Road aims to use
+                                the history of the ancient silk road signs, exalted banner of peaceful development,
+                                actively develop along with the country's economic partnership, jointly build political
+                                mutual trust, economic integration, culture include the interests of the community, fate
+                                community and community responsibility.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="../thebeltandroad/thebeltandroad_en.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    To learn more
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section section5">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">Green China dream</span>
+
+                            <h2>Sustainable development</h2>
+                            <p>The pursuit of harmony between man and nature. Sustainability can be achieved through
+                                appropriate economic means, technological measures and government interventions aimed at
+                                reducing the rate at which natural resources are consumed and thus regenerated. Such as
+                                the formation of effective profit-driven mechanism, guide enterprises to adopt clean
+                                technology and production of non-polluting goods, guide consumers to adopt sustainable
+                                consumption mode, and promote the reform of production mode.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="../greendevelopment/greendevelopment_en.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    To learn more
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section section7">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">Realize the great rejuvenation of the Chinese nation</span>
+
+                            <h2>The Chinese dream</h2>
+                            <p>The way to achieve national prosperity, national rejuvenation and people's happiness is
+                                to follow the path of socialism with Chinese characteristics, adhere to the theoretical
+                                system of socialism with Chinese characteristics, carry forward the national spirit,
+                                pool the strength of China, and make every effort to promote political, economic,
+                                cultural, social and ecological progress.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="../chinesedream/chinesedream_en.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    To learn more
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section section3">
+                        <div class="mask"></div>
+                        <div class="content">
+                            <span class="fubiaoti">Chinese traditional culture is extensive and profound</span>
+
+                            <h2>quintessence</h2>
+                            <p>The traditional culture of the Chinese nation is the most representative and the most
+                                unique cultural heritage which is welcomed by people of many times.
+                                <br>
+                                There are many quintessence of Chinese culture, among which Chinese Peking Opera,
+                                Chinese martial arts, Chinese calligraphy and Chinese medicine are well known at home
+                                and abroad.
+                            </p>
+                        </div>
+                        <div class="button_su">
+                            <span class="su_button_circle desplode-circle">
+                            </span>
+                            <a href="../quintessence/quintessence_en.html" class="button_su_inner">
+                                <span class="button_text_container">
+                                    To learn more
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <footer class="copyright hidden-xs">
+                    Copyright &copy; 2019.Company Teacher of the King All rights
+                    reserved. Web site production：Teacher of the King
+                </footer>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->Teacher of the King
+    </div>
+    <script>
+        let oA = document.querySelector("#a1");
+        let timer = null;
+
+        function autoPlay() {
+            if (oA.paused) { //如果暂停
+                $(".shengyin").css("dispaly", "block");
+                oA.paused = false; //设为不暂停
+                oA.play(); //调用play（）方法播放
+            } else { //如果未暂停
+                $(".shengyin").css("display", "none");
+                clearInterval(timer); //清掉定时器
+            }
+
+        }
+        timer = setInterval(autoPlay, 1); //用定时器触发autoplay自动播放
+    </script>
+</body>
+
+</html>

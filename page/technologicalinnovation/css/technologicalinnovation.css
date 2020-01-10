@@ -1,0 +1,356 @@
+h2 {
+    font-size: 32px;
+}
+
+.section1 .background-img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: none;
+}
+
+.section1 {
+    background-image: url(../img/zgm3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body a.tab-link {
+    color: #333;
+}
+.menu{
+    transition: all .3s;
+}
+
+body a.tab-link:hover,
+body a.tab-link:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.feature-inner a {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    background: -webkit-linear-gradient(left top, #2180d3, #3ae6dd);
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.feature-inner a:hover {
+    -ms-transform: translateY(-5px) scale(1.1);
+    transform: translateY(-5px) scale(1.1);
+    -webkit-transform: translateY(-5px) scale(1.1);
+    -webkit-box-shadow: 0 0px 12px rgba(32, 41, 50, .4);
+    box-shadow: 0 0px 12px rgba(32, 41, 50, .4);
+}
+
+.sidebar-nav li:nth-child(4):before {
+    width: 100%;
+}
+
+.sidebar-nav li:nth-child(4) a {
+    color: #fff;
+}
+
+.technological {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.index::before {
+    top: -20px;
+}
+
+.index {
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 40px;
+}
+
+.index .start {
+    font-size: 18px;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #2878ff), color-stop(0.3, #2878ff), color-stop(0.5, white), color-stop(0.7, #2878ff), color-stop(1, #2878ff));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: slidetounlock 4s linear infinite;
+    animation: slidetounlock 4s linear infinite;
+    display: inline-block;
+}
+
+.index .mouse {
+    width: 21px;
+    height: 34px;
+    border: 1px solid #fff;
+    border-radius: 10.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.mouse .gunlun {
+    width: 2px;
+    height: 8px;
+    background-color: #fff;
+    -webkit-animation: gunlun .8s infinite;
+    animation: gunlun .8s infinite;
+    border-radius: 1px;
+}
+
+.technological a:focus {
+    color: #55FBDC;
+    text-decoration: none;
+}
+
+.font-img-1 {
+    width: auto;
+    height: 125px;
+    margin: auto;
+    max-width: none;
+}
+
+.font-img-2 {
+    width: auto;
+    height: 43px;
+    margin: auto;
+    margin-top: 32px;
+    max-width: none;
+}
+
+.font-img-3 {
+    width: auto;
+    height: 35px;
+    margin: auto;
+    margin-top: 16px;
+    max-width: none;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.tab-panel p {
+    margin-top: 20px;
+    text-indent: 2em;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.pop_text {
+    margin-top: 5%;
+}
+
+.pop_text img {
+    width: 48%;
+    display: inline-block;
+
+}
+
+.qm-modal a.button,
+.qm-modal a.button:visited {
+    display: block;
+    padding: 8px 0;
+    margin: 14px auto 0;
+    background-color: #e4af79;
+    color: #f8f5f0;
+    text-align: center;
+    max-width: 100px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.qm-modal p {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.btn-info {
+    padding: 5px 50px;
+}
+
+.tab-panel img {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.tabs-content h2 {
+    margin-left: 20px;
+    text-align: left;
+}
+
+
+.tabs-content h2::before {
+    content: "";
+    background-color: rgb(0, 126, 255);
+    width: 4px;
+    position: absolute;
+    height: 31px;
+    margin-right: 20px;
+    top: 2px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.text-sm {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.tabs-links li a span,
+.feature-title,
+.testimonial-name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+
+}
+
+@-webkit-keyframes gunlun {
+    from {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        opacity: 1;
+    }
+
+    to {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+        opacity: 0;
+    }
+}
+
+@keyframes gunlun {
+    from {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        opacity: 1;
+    }
+
+    to {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slidetounlock {
+    0% {
+        background-position: -150px 0
+    }
+
+    80% {
+        background-position: 100px 0
+    }
+
+    100% {
+        background-position: 150px 0
+    }
+}
+
+@keyframes slidetounlock {
+    0% {
+        background-position: -150px 0
+    }
+
+    80% {
+        background-position: 100px 0
+    }
+
+    100% {
+        background-position: 150px 0
+    }
+}
+
+@media (min-width: 641px) {
+    .hero-inner {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .testimonial-body p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1200px) {
+    .feature {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .feature {
+        width: 100%;
+    }
+
+    .font-img-1,
+    .font-img-2,
+    .font-img-3 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-title {
+        margin-top: 20px;
+    }
+
+    .features-inner {
+        padding-bottom: 20px;
+    }
+
+    .features-tabs {
+        height: auto;
+    }
+
+    .text-sm {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow-y: auto;
+    }
+    body .qm-modal{
+        width: 90%;
+    }
+}
